@@ -1,0 +1,129 @@
+{
+  "interval:recipes/misc/izumi_food_pai_meng_from_blasting_izumi_mimi": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/food/izumi_food_pai_meng_from_campfire_cooking": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/building_blocks/void_mist_flux_crystal_to_diamond_block": {
+    "criteria": {
+      "has_item": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_clsy": {
+    "criteria": {
+      "has_izumi_clsy": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/cphn_clsy_lxtl_ether_pai_meng": {
+    "criteria": {
+      "has_item": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_cphn": {
+    "criteria": {
+      "has_izumi_cphn": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/building_blocks/izumi_ether_amber": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_mimi": {
+    "criteria": {
+      "has_izumi_ether_amber": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-03-18 14:33:47 +0800"
+    },
+    "done": false
+  },
+  "interval:recipes/misc/izumi_food_pai_meng_from_smelting_izumi_mimi": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/fluor_ice_to_ether_amber": {
+    "criteria": {
+      "has_item": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/cphn_clsy_lxtl_to_apple": {
+    "criteria": {
+      "has_item": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_lxtl": {
+    "criteria": {
+      "has_izumi_lxtl": "2026-03-18 14:33:46 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 3953
+}

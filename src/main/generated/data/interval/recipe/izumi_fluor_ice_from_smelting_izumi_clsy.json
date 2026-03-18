@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 10,
+  "experience": 0.7,
+  "group": "izumi_ores",
+  "ingredient": {
+    "item": "interval:izumi_clsy"
+  },
+  "result": {
+    "id": "interval:izumi_fluor_ice"
+  }
+}

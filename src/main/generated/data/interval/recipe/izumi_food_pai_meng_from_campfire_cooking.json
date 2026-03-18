@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 32,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "interval:izumi_mimi"
+  },
+  "result": {
+    "id": "interval:izumi_food_pai_meng"
+  }
+}

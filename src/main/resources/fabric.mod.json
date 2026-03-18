@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "interval",
+  "version": "${version}",
+  "name": "interval",
+  "description": "interval ",
+  "authors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/interval/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.mikuas.interval.client.IntervalDataGenerator"
+    ],
+    "client": [
+      "net.mikuas.interval.client.IntervalClient"
+    ],
+    "main": [
+      "net.mikuas.interval.Interval"
+    ]
+  },
+  "mixins": [
+    "interval.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

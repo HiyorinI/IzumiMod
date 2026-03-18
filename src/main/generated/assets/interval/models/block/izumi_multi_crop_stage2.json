@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "interval:block/izumi_multi_crop_stage2"
+  }
+}

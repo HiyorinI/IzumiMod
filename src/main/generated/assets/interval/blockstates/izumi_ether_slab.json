@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "interval:block/izumi_ether_slab"
+    },
+    "type=double": {
+      "model": "interval:block/izumi_ether_amber"
+    },
+    "type=top": {
+      "model": "interval:block/izumi_ether_slab_top"
+    }
+  }
+}

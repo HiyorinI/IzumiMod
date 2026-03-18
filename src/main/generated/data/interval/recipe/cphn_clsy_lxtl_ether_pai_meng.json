@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "interval:izumi_cphn"
+    },
+    {
+      "item": "interval:izumi_clsy"
+    },
+    {
+      "item": "interval:izumi_lxtl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interval:izumi_food_pai_meng"
+  }
+}

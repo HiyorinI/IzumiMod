@@ -1,0 +1,7 @@
+// 1.21	2026-03-18T23:22:46.1109992	interval/Block Loot Tables
+fc589b4edec44b65f1469c108818e610e91f962d data\interval\loot_table\blocks\izumi_fluor_ice.json
+1dd3fdd6578cd60d7611e4731792b94165b4fe0a data\interval\loot_table\blocks\izumi_crop.json
+1b2717983d684edec48c3cf3349e69d2b7e99bd8 data\interval\loot_table\blocks\izumi_void_mist.json
+e48b2f8b5d2086d134104e6b8bc29a12b8ae2909 data\interval\loot_table\blocks\izumi_ether_amber.json
+82abc16a3d2f23667bc414739fcd71da21c9b24c data\interval\loot_table\blocks\izumi_multi_crop.json
+09bf884aa538abca62cccf93f38cb1aa6f3034a0 data\interval\loot_table\blocks\izumi_flux_crystal.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_izumi_mimi": {
+      "conditions": {
+        "items": [
+          {
+            "items": "interval:izumi_mimi"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:izumi_food_pai_meng_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_izumi_mimi"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:izumi_food_pai_meng_from_campfire_cooking"
+    ]
+  }
+}

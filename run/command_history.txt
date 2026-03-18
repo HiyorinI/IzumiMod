@@ -1,0 +1,14 @@
+/tick
+/time set day
+/give @a interval:izumi_void_door 1
+/time set day
+/give @a interval:izumi_void_trapdoor 1
+/give @a interval:izumi_seed 2
+/give @a interval:izumi_clsy 1
+/give @a interval:izumi_crop 1
+/give @a interval:izumi_crop
+/give @a interval:izumi_cphn 1
+/give @a interval:izumi_clsy 1
+/time set day
+/tick step 1s
+/give @a interval:izumi_multi_crop_seed 1

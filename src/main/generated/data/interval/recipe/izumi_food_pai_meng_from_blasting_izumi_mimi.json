@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 16,
+  "experience": 0.7,
+  "group": "ice_ether",
+  "ingredient": {
+    "item": "interval:izumi_mimi"
+  },
+  "result": {
+    "id": "interval:izumi_food_pai_meng"
+  }
+}

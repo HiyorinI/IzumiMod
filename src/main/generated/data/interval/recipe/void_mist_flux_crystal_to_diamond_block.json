@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "interval:izumi_void_mist"
+    },
+    "X": {
+      "item": "interval:izumi_flux_crystal"
+    }
+  },
+  "pattern": [
+    "# #",
+    " X "
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:diamond_block"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_izumi_lxtl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "interval:izumi_lxtl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:izumi_fluor_ice_from_smelting_izumi_lxtl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_izumi_lxtl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:izumi_fluor_ice_from_smelting_izumi_lxtl"
+    ]
+  }
+}

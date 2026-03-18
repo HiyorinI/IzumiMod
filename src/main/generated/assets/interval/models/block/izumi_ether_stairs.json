@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "interval:block/izumi_ether_amber",
+    "side": "interval:block/izumi_ether_amber",
+    "top": "interval:block/izumi_ether_amber"
+  }
+}
