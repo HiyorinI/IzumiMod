@@ -55,6 +55,12 @@ public class IzumiItemGroups
 
                             // 盔甲
                             entries.add(IzumiItems.IZUMI_HELMET);
+                            entries.add(IzumiItems.IZUMI_CHESTPLATE);
+                            entries.add(IzumiItems.IZUMI_LEGGINGS);
+                            entries.add(IzumiItems.IZUMI_BOOTS);
+
+                            // 饰品
+//                            entries.add(IzumiItems.IZUMI_HAT);
 
                             // 作物
 //                            entries.add(IzumiBlocks.IZUMI_CROP);

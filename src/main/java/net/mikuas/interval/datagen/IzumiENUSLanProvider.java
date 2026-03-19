@@ -45,6 +45,9 @@ public class IzumiENUSLanProvider extends FabricLanguageProvider
 
         // 盔甲
         translationBuilder.add(IzumiItems.IZUMI_HELMET, "Helmet");
+        translationBuilder.add(IzumiItems.IZUMI_CHESTPLATE, "Chestplate");
+        translationBuilder.add(IzumiItems.IZUMI_LEGGINGS, "leggings");
+        translationBuilder.add(IzumiItems.IZUMI_BOOTS, "boots");
 
         // 作物
         translationBuilder.add(IzumiBlocks.IZUMI_CROP, "Crop");

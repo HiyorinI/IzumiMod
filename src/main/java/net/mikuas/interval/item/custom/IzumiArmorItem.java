@@ -47,16 +47,20 @@ public class IzumiArmorItem extends ArmorItem
                     .build();
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (entity instanceof PlayerEntity player && hasHelmetArmor(player)) {
-//        if (!world.isClient() && entity instanceof PlayerEntity player && hasHelmetArmor(player)) {
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)
+    {
+//        if (entity instanceof PlayerEntity player && hasHelmetArmor(player)) {
+        if (!world.isClient() && entity instanceof PlayerEntity player && hasFullSuitOfArmor(player))
+        {
             evaluateArmorEffects(player);
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 
-    private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, List<StatusEffectInstance>> entry : MAP.entrySet()) {
+    private void evaluateArmorEffects(PlayerEntity player)
+    {
+        for (Map.Entry<ArmorMaterial, List<StatusEffectInstance>> entry : MAP.entrySet())
+        {
             ArmorMaterial material = entry.getKey();
             List<StatusEffectInstance> effects = entry.getValue();
 
@@ -68,28 +72,33 @@ public class IzumiArmorItem extends ArmorItem
         }
     }
 
-    private void addStatusEffectForMaterial(PlayerEntity player, StatusEffectInstance effect) {
+    private void addStatusEffectForMaterial(PlayerEntity player, StatusEffectInstance effect)
+    {
         boolean hasEffect = player.hasStatusEffect(effect.getEffectType());
 
-        if (!hasEffect) {
+        if (!hasEffect)
+        {
             player.addStatusEffect(new StatusEffectInstance(effect));
         }
     }
 
-    private boolean hasCorrectArmorSet(PlayerEntity player, ArmorMaterial material) {
-        for (ItemStack stack : player.getInventory().armor) {
-            if (!(stack.getItem() instanceof ArmorItem)) {
+    private boolean hasCorrectArmorSet(PlayerEntity player, ArmorMaterial material)
+    {
+        for (ItemStack stack : player.getInventory().armor)
+        {
+            if (!(stack.getItem() instanceof ArmorItem))
+            {
                 return false;
             }
         }
 
         ArmorItem helmet = (ArmorItem) player.getInventory().getArmorStack(3).getItem();
-//        ArmorItem chestplate = (ArmorItem) player.getInventory().getArmorStack(2).getItem();
-//        ArmorItem leggings = (ArmorItem) player.getInventory().getArmorStack(1).getItem();
-//        ArmorItem boots = (ArmorItem) player.getInventory().getArmorStack(0).getItem();
-
-        return helmet.getMaterial().value() == material;
-//        return helmet.getMaterial().value() == material && chestplate.getMaterial().value() == material && leggings.getMaterial().value() == material && boots.getMaterial().value() == material;
+        ArmorItem chestplate = (ArmorItem) player.getInventory().getArmorStack(2).getItem();
+        ArmorItem leggings = (ArmorItem) player.getInventory().getArmorStack(1).getItem();
+        ArmorItem boots = (ArmorItem) player.getInventory().getArmorStack(0).getItem();
+//
+//        return helmet.getMaterial().value() == material;
+        return helmet.getMaterial().value() == material && chestplate.getMaterial().value() == material && leggings.getMaterial().value() == material && boots.getMaterial().value() == material;
     }
 
     private boolean hasHelmetArmor(PlayerEntity player)

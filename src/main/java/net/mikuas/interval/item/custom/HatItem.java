@@ -5,14 +5,13 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Equipment;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class HatItem extends Item implements Equipment
+public class HatItem extends IzumiItem implements Equipment
 {
     /*
         头饰

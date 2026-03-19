@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "interval:izumi_fluor_ice"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "interval:izumi_lxtl"
+  }
+}

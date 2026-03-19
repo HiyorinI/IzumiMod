@@ -1,5 +1,8 @@
 {
   "values": [
-    "interval:izumi_helmet"
+    "interval:izumi_helmet",
+    "interval:izumi_chestplate",
+    "interval:izumi_leggings",
+    "interval:izumi_boots"
   ]
 }

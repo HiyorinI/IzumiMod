@@ -5,10 +5,12 @@ import net.mikuas.interval.block.custom.IzumiBlock;
 import net.mikuas.interval.block.custom.IzumiCropBlock;
 import net.mikuas.interval.block.custom.IzumiMultiCropBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class IzumiBlocks
@@ -57,17 +59,16 @@ public class IzumiBlocks
     public static final Block IZUMI_ETHER_TRAPDOOR = register("izumi_ether_trapdoor", new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(IZUMI_ETHER_AMBER)));
 
     // 作物
-//            new StrawberryCropBlock(
-//                    AbstractBlock.Settings.create()
-//                            .mapColor(MapColor.DARK_GREEN)
-//                            .noCollision() // 无碰撞箱
-//                            .ticksRandomly() // 随机刻度
-//                            .breakInstantly() // 瞬间被破环
-//                            .sounds(BlockSoundGroup.CROP) // 声音
-//                            .pistonBehavior(PistonBehavior.DESTROY) // 活塞动作
-//            )
     public static final Block IZUMI_CROP = Registry.register(Registries.BLOCK, Identifier.of(Interval.MOD_ID, "izumi_crop"),
-            new IzumiCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+            new IzumiCropBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision() // 无碰撞箱
+                    .ticksRandomly() // 随机刻度
+                    .breakInstantly() // 瞬间被破环
+                    .sounds(BlockSoundGroup.CROP) // 声音
+                    .pistonBehavior(PistonBehavior.DESTROY) // 活塞动作
+                    )
+            );
 
     // 多方块作物
     public static final Block IZUMI_MULTI_CROP = Registry.register(Registries.BLOCK, Identifier.of(Interval.MOD_ID, "izumi_multi_crop"),

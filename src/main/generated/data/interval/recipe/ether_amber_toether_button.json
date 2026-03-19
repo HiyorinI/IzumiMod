@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "interval:izumi_ether_amber"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interval:izumi_ether_button"
+  }
+}

@@ -42,7 +42,7 @@ public class IzumiItems
     public static final Item IZUMI_SHOVEL = registerItems("izumi_shovel", new ShovelItem(IzumiToolMaterials.IZUMI_LXTL, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(IzumiToolMaterials.IZUMI_LXTL, 1.5F, 0.0F))));
 
     // 稿子
-    public static final Item IZUMI_PICKAXE = registerItems("izumi_pickaxe", new PickaxeItem(IzumiToolMaterials.IZUMI_LXTL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(IzumiToolMaterials.IZUMI_LXTL, 2.5F, 0.0F))));
+    public static final Item IZUMI_PICKAXE = registerItems("izumi_pickaxe", new PickaxeItem(IzumiToolMaterials.IZUMI_PICKAXE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(IzumiToolMaterials.IZUMI_PICKAXE, 2.5F, 0.0F))));
 
     // 斧头
     public static final Item IZUMI_AXE = registerItems("izumi_axe", new AxeItem(IzumiToolMaterials.IZUMI_LXTL, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(IzumiToolMaterials.IZUMI_LXTL, 3.5F, -1.0F))));
@@ -53,6 +53,12 @@ public class IzumiItems
     // 盔甲
     // 头盔
     public static final Item IZUMI_HELMET = registerItems("izumi_helmet", new IzumiArmorItem(IzumiArmorMaterials.IZUMI_LXTL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(24))));
+    // 护甲
+    public static final Item IZUMI_CHESTPLATE = registerItems("izumi_chestplate", new IzumiArmorItem(IzumiArmorMaterials.IZUMI_LXTL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(24))));
+    // 护腿
+    public static final Item IZUMI_LEGGINGS = registerItems("izumi_leggings", new IzumiArmorItem(IzumiArmorMaterials.IZUMI_LXTL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(24))));
+    // 鞋子
+    public static final Item IZUMI_BOOTS = registerItems("izumi_boots", new IzumiArmorItem(IzumiArmorMaterials.IZUMI_LXTL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(24))));
 
     // 帽子
     public static final Item IZUMI_HAT = registerItems("izumi_hat", new HatItem(HatItem.Type.Hat, new Item.Settings().maxDamage(HatItem.Type.Hat.getMaxDamage(12))));

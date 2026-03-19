@@ -2,7 +2,6 @@ package net.mikuas.interval.item;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
@@ -18,11 +17,11 @@ public enum IzumiToolMaterials implements ToolMaterial
             14.0F,                               // 采集速度
             24.0F,                             // 伤害
             50,                                // 附魔能力
-            () -> Ingredient.ofItems(IzumiItems.IZUMI_LXTL) // 修复材料
+            () -> Ingredient.ofItems(IzumiItems.IZUMI_CLSY) // 修复材料
     ),
 
     // 合金工具 INCORRECT_FOR_NETHERITE_TOOL
-    IZUMI_CPHN_SWORD(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2077, 24.0F, 12.0F, 50, () -> Ingredient.ofItems(IzumiItems.IZUMI_FOOD_PAI_MENG));
+    IZUMI_PICKAXE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2077, 32.0F, 12.0F, 50, () -> Ingredient.ofItems(IzumiItems.IZUMI_LXTL));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

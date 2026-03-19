@@ -44,6 +44,9 @@ public class IzumiZHCNLanProvider extends FabricLanguageProvider
 
         // 盔甲
         translationBuilder.add(IzumiItems.IZUMI_HELMET, "迷迷帽");
+        translationBuilder.add(IzumiItems.IZUMI_CHESTPLATE, "迷迷护甲");
+        translationBuilder.add(IzumiItems.IZUMI_LEGGINGS, "迷迷护腿");
+        translationBuilder.add(IzumiItems.IZUMI_BOOTS, "迷迷靴子");
 
         // 作物
         translationBuilder.add(IzumiBlocks.IZUMI_CROP, "作物");
@@ -65,7 +68,7 @@ public class IzumiZHCNLanProvider extends FabricLanguageProvider
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_BUTTON, "塔菲按钮");
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_PRESSURE_PLATE, "塔菲压力板");
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_FENCE, "塔菲围栏");
-        translationBuilder.add(IzumiBlocks.IZUMI_ETHER_FENCE_GATE, "他为栅栏门");
+        translationBuilder.add(IzumiBlocks.IZUMI_ETHER_FENCE_GATE, "塔菲栅栏门");
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_WALL, "塔菲石围栏");
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_DOOR, "塔菲门");
         translationBuilder.add(IzumiBlocks.IZUMI_ETHER_TRAPDOOR, "塔菲活板门");

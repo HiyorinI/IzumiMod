@@ -1,0 +1,117 @@
+{
+  "interval:recipes/combat/lxtl_to_chestplate": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_food_pai_meng_from_blasting_izumi_mimi": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/combat/lxtl_to_helmet": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/food/izumi_food_pai_meng_from_campfire_cooking": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_clsy": {
+    "criteria": {
+      "has_izumi_clsy": "2026-03-19 13:38:07 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/cphn_clsy_lxtl_ether_pai_meng": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/clsy_to_lxtl": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:07 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/mimi_to_cphn": {
+    "criteria": {
+      "has_item": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/combat/lxtl_to_leggings": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/combat/lxtl_to_boots": {
+    "criteria": {
+      "has_item": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-03-19 13:38:29 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_cphn": {
+    "criteria": {
+      "has_izumi_cphn": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-03-19 13:37:52 +0800"
+    },
+    "done": false
+  },
+  "interval:recipes/misc/izumi_food_pai_meng_from_smelting_izumi_mimi": {
+    "criteria": {
+      "has_izumi_mimi": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/cphn_to_clsy": {
+    "criteria": {
+      "has_item": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-03-19 13:40:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2026-03-19 13:37:51 +0800"
+    },
+    "done": true
+  },
+  "interval:recipes/misc/izumi_fluor_ice_from_smelting_izumi_lxtl": {
+    "criteria": {
+      "has_izumi_lxtl": "2026-03-19 13:38:11 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 3953
+}

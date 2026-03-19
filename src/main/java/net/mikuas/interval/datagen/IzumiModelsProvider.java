@@ -78,6 +78,9 @@ public class IzumiModelsProvider extends FabricModelProvider
 
         // 头盔
         itemModelGenerator.registerArmor((ArmorItem)IzumiItems.IZUMI_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem)IzumiItems.IZUMI_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem)IzumiItems.IZUMI_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem)IzumiItems.IZUMI_BOOTS);
 
         // Food Items
         itemModelGenerator.register(IzumiItems.IZUMI_FOOD_PAI_MENG, Models.GENERATED);

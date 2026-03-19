@@ -12,3 +12,19 @@
 /time set day
 /tick step 1s
 /give @a interval:izumi_multi_crop_seed 1
+/kill @e[type=!minecraft:player]
+/effect give @a minecraft:bad_omen
+/effect give @a minecraft:hunger
+/time set day
+/give Player589 interval:izumi_sword 1
+/effect give @a minecraft:hunger
+/effect give @a minecraft:hunger 3
+/effect give @a minecraft:hunger 2
+/effect give @a minecraft:hunger 1
+/effect give @a minecraft:hunger infinite 1
+/give @a interval:izumi_void_mist 32
+/give @a interval:izumi_food_star_rail 2
+/give @a interval:izumi_food_pai_meng 3
+/time set day
+/give @a interval:izumi_mimi 1024
+/time set night

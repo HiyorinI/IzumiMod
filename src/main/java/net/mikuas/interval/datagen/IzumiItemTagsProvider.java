@@ -27,6 +27,9 @@ public class IzumiItemTagsProvider extends FabricTagProvider.ItemTagProvider
 
         // 锻造模板 Tag
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(IzumiItems.IZUMI_HELMET);
+                .add(IzumiItems.IZUMI_HELMET)
+                .add(IzumiItems.IZUMI_CHESTPLATE)
+                .add(IzumiItems.IZUMI_LEGGINGS)
+                .add(IzumiItems.IZUMI_BOOTS);
     }
 }

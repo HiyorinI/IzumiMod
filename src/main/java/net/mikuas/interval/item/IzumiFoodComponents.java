@@ -10,10 +10,16 @@ public class IzumiFoodComponents
 
     public static final FoodComponent IZUMI_FOOD_PAI_MENG = new FoodComponent.Builder().nutrition(6).saturationModifier(2.0F)
             .statusEffect(new StatusEffectInstance(
-                    StatusEffects.FIRE_RESISTANCE, // 效果
+                    StatusEffects.NIGHT_VISION, // 效果
                     600, // 持续时间 单位 tick 30s
-                    1 // 触发概率
-            ), 1.0F) // 效果
+                    1
+            ), 1.0F) // 触发概率
+            .statusEffect(new StatusEffectInstance(
+                    StatusEffects.WATER_BREATHING,
+                    600,
+                    1
+            ),  0.5F)
+            // 效果
             .alwaysEdible() // 永远可以食用
             .usingConvertsTo(IzumiItems.IZUMI_MIMI) // 吃玩返回
             .build();
