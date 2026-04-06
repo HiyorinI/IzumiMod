@@ -18,18 +18,43 @@ public class IzumiBlockTagsProvider extends FabricTagProvider.BlockTagProvider
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE) // Request Tool ?// Pickaxe
                 .add(IzumiBlocks.IZUMI_FLUOR_ICE) // 1.0
                 .add(IzumiBlocks.IZUMI_ETHER_AMBER)
-                .add(IzumiBlocks.IZUMI_FLUX_CRYSTAL);
+                .add(IzumiBlocks.IZUMI_FLUX_CRYSTAL)
+
+                .add(IzumiBlocks.IZUMI_AI_YIN)
+
+                .add(IzumiBlocks.IZUMI_ETHER_STAIRS)
+                .add(IzumiBlocks.IZUMI_ETHER_SLAB)
+                .add(IzumiBlocks.IZUMI_ETHER_BUTTON)
+                .add(IzumiBlocks.IZUMI_ETHER_PRESSURE_PLATE)
+                .add(IzumiBlocks.IZUMI_ETHER_FENCE)
+                .add(IzumiBlocks.IZUMI_ETHER_FENCE_GATE)
+                .add(IzumiBlocks.IZUMI_ETHER_WALL)
+                .add(IzumiBlocks.IZUMI_ETHER_DOOR)
+                .add(IzumiBlocks.IZUMI_ETHER_TRAPDOOR)
+
+                .add(IzumiBlocks.IZUMI_SIMPLE_BLOCK);
 
         // 石工具
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(IzumiBlocks.IZUMI_FLUOR_ICE);
+                .add(IzumiBlocks.IZUMI_FLUOR_ICE)
+                .add(IzumiBlocks.IZUMI_AI_YIN)
+                .add(IzumiBlocks.IZUMI_SIMPLE_BLOCK);
 
         // 铁工具
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(IzumiBlocks.IZUMI_ETHER_AMBER)
+                .add(IzumiBlocks.IZUMI_ETHER_STAIRS)
+                .add(IzumiBlocks.IZUMI_ETHER_SLAB)
+                .add(IzumiBlocks.IZUMI_ETHER_BUTTON)
+                .add(IzumiBlocks.IZUMI_ETHER_PRESSURE_PLATE)
+                .add(IzumiBlocks.IZUMI_ETHER_FENCE)
+                .add(IzumiBlocks.IZUMI_ETHER_FENCE_GATE)
+                .add(IzumiBlocks.IZUMI_ETHER_WALL)
+                .add(IzumiBlocks.IZUMI_ETHER_DOOR)
+                .add(IzumiBlocks.IZUMI_ETHER_TRAPDOOR)
                 .add(IzumiBlocks.IZUMI_FLUX_CRYSTAL);
 
         // Ore Tags
@@ -44,7 +69,7 @@ public class IzumiBlockTagsProvider extends FabricTagProvider.BlockTagProvider
                 .forceAddTag(BlockTags.LAPIS_ORES)      // 青金石矿石
                 .forceAddTag(BlockTags.REDSTONE_ORES);  // 红石矿石
 
-        // 连接 Tag
+        // 连接 Tags
         getOrCreateTagBuilder(BlockTags.FENCES) // 围栏连接, 默认和下界砖连接
                 .add(IzumiBlocks.IZUMI_ETHER_FENCE);
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES) // 和木制连接
@@ -58,5 +83,14 @@ public class IzumiBlockTagsProvider extends FabricTagProvider.BlockTagProvider
 
         getOrCreateTagBuilder(BlockTags.WALLS) // 石头围墙
                 .add(IzumiBlocks.IZUMI_ETHER_WALL);
+
+        // 木头 Tags
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(IzumiBlocks.IZUMI_LOG)
+                .add(IzumiBlocks.IZUMI_WOOD)
+                .add(IzumiBlocks.STRIPPED_IZUMI_LOG)
+                .add(IzumiBlocks.STRIPPED_IZUMI_WOOD);
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(IzumiBlocks.IZUMI_PLANKS);
     }
 }

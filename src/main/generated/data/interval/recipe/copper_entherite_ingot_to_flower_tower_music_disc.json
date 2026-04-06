@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "Y": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    "###",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "interval:flower_tower_music_disc"
+  }
+}

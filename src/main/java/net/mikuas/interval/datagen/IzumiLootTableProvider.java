@@ -36,35 +36,54 @@ public class IzumiLootTableProvider extends FabricBlockLootTableProvider
         addDrop(IzumiBlocks.IZUMI_ETHER_AMBER);
         addDrop(IzumiBlocks.IZUMI_FLUX_CRYSTAL);
         addDrop(IzumiBlocks.IZUMI_VOID_MIST);
+
+        addDrop(IzumiBlocks.IZUMI_AI_YIN);
 //        addDrop(ModBlocks.ICE_QCF_BLOCK);
 
-        // 一般矿石写法
-//        addDrop(ModBlocks.ICE_ETHER_BLOCK, oreDrops(ModBlocks.ICE_ETHER_BLOCK, ModItems.ICE_ETHER));
+        addDrop(IzumiBlocks.IZUMI_ETHER_STAIRS);
+        addDrop(IzumiBlocks.IZUMI_ETHER_SLAB);
+        addDrop(IzumiBlocks.IZUMI_ETHER_BUTTON);
+        addDrop(IzumiBlocks.IZUMI_ETHER_PRESSURE_PLATE);
+        addDrop(IzumiBlocks.IZUMI_ETHER_FENCE);
+        addDrop(IzumiBlocks.IZUMI_ETHER_FENCE_GATE);
+        addDrop(IzumiBlocks.IZUMI_ETHER_WALL);
+        addDrop(IzumiBlocks.IZUMI_ETHER_DOOR);
+        addDrop(IzumiBlocks.IZUMI_ETHER_TRAPDOOR);
 
-//        addDrop(ModBlocks.ICE_ETHER_BLOCK, copperOreLikeDrops(ModBlocks.ICE_ETHER_BLOCK, ModItems.ICE_ETHER));
+        /*
+            自定义方块
+         */
+        addDrop(IzumiBlocks.IZUMI_SIMPLE_BLOCK);
+
+        // 一般矿石写法
         addDrop(IzumiBlocks.IZUMI_FLUOR_ICE, copperOreLikeDrops(IzumiBlocks.IZUMI_FLUOR_ICE, IzumiItems.IZUMI_MIMI));
 
+        addDrop(IzumiBlocks.IZUMI_LOG);
+        addDrop(IzumiBlocks.IZUMI_WOOD);
+        addDrop(IzumiBlocks.STRIPPED_IZUMI_LOG);
+        addDrop(IzumiBlocks.STRIPPED_IZUMI_WOOD);
+        addDrop(IzumiBlocks.IZUMI_PLANKS);
+
+        addDrop(IzumiBlocks.IZUMI_SIMPLE_FLOWER);
+
         // 作物
-//        LootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(IzumiBlocks.IZUMI_CROP)
-//                .properties(StatePredicate.Builder.create().exactMatch(StrawberryCropBlock.AGE, 3));
+        // LootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(IzumiBlocks.IZUMI_CROP).properties(StatePredicate.Builder.create().exactMatch(StrawberryCropBlock.AGE, 3));
 
         LootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(IzumiBlocks.IZUMI_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(IzumiCropBlock.AGE, 3));
-        addDrop(IzumiBlocks.IZUMI_CROP, cropDrops(
-                IzumiBlocks.IZUMI_CROP, IzumiItems.IZUMI_MIMI, IzumiItems.IZUMI_SEED, builder2));
+        addDrop(IzumiBlocks.IZUMI_CROP, cropDrops(IzumiBlocks.IZUMI_CROP, IzumiItems.IZUMI_MIMI, IzumiItems.IZUMI_SEED, builder2));
 
         LootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(IzumiBlocks.IZUMI_MULTI_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(IzumiCropBlock.AGE, 8));
-        addDrop(IzumiBlocks.IZUMI_MULTI_CROP, cropDrops(
-                IzumiBlocks.IZUMI_MULTI_CROP, IzumiItems.IZUMI_MIMI, IzumiItems.IZUMI_MULTI_CROP_SEED, builder3));
-//
+        addDrop(IzumiBlocks.IZUMI_MULTI_CROP, cropDrops(IzumiBlocks.IZUMI_MULTI_CROP, IzumiItems.IZUMI_MIMI, IzumiItems.IZUMI_MULTI_CROP_SEED, builder3));
+
 //        addDrop(IzumiBlocks.IZUMI_CROP,
 //                cropDrops(IzumiBlocks.IZUMI_CROP,   // 作物
 //                        IzumiItems.IZUMI_FOOD_PAI_MENG,  // 产物
-//                        IzumiItems.IZUMI_SEED,      //种子
-//                        builder2
-//                )
-//        );
+//                         IzumiItems.IZUMI_SEED,      //种子
+//                         builder2
+//                 )
+//         );
     }
 
     public LootTable.Builder copperOreLikeDrops(Block drop, Item dropItem)

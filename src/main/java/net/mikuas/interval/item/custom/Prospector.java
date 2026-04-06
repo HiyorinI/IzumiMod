@@ -5,19 +5,14 @@ import net.minecraft.block.BlockState;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.tooltip.TooltipType;
-import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.util.List;
 
-public class Prospector extends Item
+public class Prospector extends IzumiItem
 {
     public static final int WIDTH = 5;
     public static final int LENGTH = 5;
@@ -28,6 +23,7 @@ public class Prospector extends Item
         super(settings.maxDamage(MAX_DAMAGE) // max damage: 耐久
                 .fireproof() // 防火
         );
+        this.hasShiftTooltip().setTooltip("item.interval.prospector.tooltip", "item.interval.prospector.shift_tooltip");
     }
 
     @Override
@@ -98,14 +94,5 @@ public class Prospector extends Item
         // 探测的矿物是否存在标签里
         return (blockState.isIn(IzumiBlockTags.ORE_LIST));
 //        return (blockState.isOf(Blocks.DIAMOND_ORE) || blockState.isOf(Blocks.IRON_ORE));
-    }
-
-    // 添加工具提示
-    @Override
-    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type)
-    {
-        super.appendTooltip(stack, context, tooltip, type);
-        MutableText text = Text.translatable(Screen.hasShiftDown() ? "item.interval.prospector.shift_tooltip" : "item.interval.prospector.tooltip");
-        tooltip.add(text);
     }
 }

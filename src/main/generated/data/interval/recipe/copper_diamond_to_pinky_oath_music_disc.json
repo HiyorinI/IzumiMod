@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "Y": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    "###",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "interval:pinky_oath_music_disc"
+  }
+}

@@ -62,14 +62,28 @@ public class IzumiItemGroups
                             // 饰品
 //                            entries.add(IzumiItems.IZUMI_HAT);
 
+                            // 音乐唱片
+                            entries.add(IzumiItems.NO_GOOD_MUSIC_DISC);
+                            entries.add(IzumiItems.THE_WAY_THAT_I_LOVED_YOU_MUSIC_DISC);
+                            entries.add(IzumiItems.PINKY_OATH_MUSIC_DISC);
+                            entries.add(IzumiItems.FLOWER_TOWER_MUSIC_DISC);
+
                             // 作物
 //                            entries.add(IzumiBlocks.IZUMI_CROP);
                             entries.add(IzumiItems.IZUMI_SEED);
                             entries.add(IzumiItems.IZUMI_MULTI_CROP_SEED);
 
+                            // 流体
+                            entries.add(IzumiItems.FEN_DA_BUCKET);
+
+                            // 马凯
+                            entries.add(IzumiItems.IZUMI_CPHN_HORSE_ARMOR);
+
                             // Blocks
                             entries.add(IzumiBlocks.IZUMI_FLUOR_ICE);
                             entries.add(IzumiBlocks.IZUMI_FLUX_CRYSTAL);
+
+                            entries.add(IzumiBlocks.IZUMI_AI_YIN);
 
                             entries.add(IzumiBlocks.IZUMI_VOID_MIST);
                             entries.add(IzumiBlocks.IZUMI_VOID_DOOR);
@@ -86,6 +100,39 @@ public class IzumiItemGroups
                             entries.add(IzumiBlocks.IZUMI_ETHER_DOOR);
                             entries.add(IzumiBlocks.IZUMI_ETHER_TRAPDOOR);
 
+                            // 箱子(方块实体)
+                            entries.add(IzumiBlocks.IZUMI_BOX);
+
+                            // 自定义方块实体
+                            entries.add(IzumiBlocks.POLISHING_MACHINE);
+
+                            // 自定义物品, 方块
+                            entries.add(IzumiItems.IZUMI_SIMPLE_ITEM);
+                            entries.add(IzumiBlocks.IZUMI_SIMPLE_BLOCK);
+                            entries.add(IzumiBlocks.IZUMI_SIMPLE_FENCE);
+
+                            // 木头
+                            entries.add(IzumiBlocks.IZUMI_LOG);
+                            entries.add(IzumiBlocks.IZUMI_WOOD);
+                            entries.add(IzumiBlocks.STRIPPED_IZUMI_LOG);
+                            entries.add(IzumiBlocks.STRIPPED_IZUMI_WOOD);
+                            entries.add(IzumiBlocks.IZUMI_PLANKS);
+                            entries.add(IzumiBlocks.IZUMI_LEAVES);
+
+                            // 告示牌
+                            entries.add(IzumiItems.IZUMI_SIGN);
+                            entries.add(IzumiItems.IZUMI_HANGING_SIGN);
+
+                            // 船
+                            entries.add(IzumiItems.IZUMI_BOAT);
+                            entries.add(IzumiItems.IZUMI_CHEST_BOAT);
+
+                            // 树苗
+                            entries.add(IzumiBlocks.IZUMI_SAPLING);
+
+                            // 花, 盆栽
+                            entries.add(IzumiBlocks.IZUMI_SIMPLE_FLOWER);
+                            // entries.add(IzumiBlocks.IZUMI_POTTED_SIMPLE_FLOWER);
                         }))
                         .build()
         );

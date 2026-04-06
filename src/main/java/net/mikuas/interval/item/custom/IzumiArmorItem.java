@@ -23,28 +23,19 @@ public class IzumiArmorItem extends ArmorItem
         super(material, type, settings);
     }
 
-    private static final Map<ArmorMaterial, List<StatusEffectInstance>> MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
-                    .put(IzumiArmorMaterials.IZUMI_LXTL.value(),
-                            Arrays.asList(
-                                    new StatusEffectInstance(
-                                            StatusEffects.WATER_BREATHING,  // 效果
-                                            1000,                           // 持续时间
-                                            1,
-                                            false,
-                                            false,
-                                            true
-                                    ), new StatusEffectInstance(
-                                            StatusEffects.SPEED,
-                                            1000,
-                                            1,
-                                            false,
-                                            false,
-                                            true
-                                    )
-                            )
+    private static final Map<ArmorMaterial, List<StatusEffectInstance>> MAP = (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
+            .put(IzumiArmorMaterials.IZUMI_LXTL.value(), Arrays.asList(
+                    new StatusEffectInstance(
+                            StatusEffects.WATER_BREATHING,  // 效果
+                            1000,                           // 持续时间
+                            1,
+                            false,
+                            false,
+                            true
+                    ),
+                    new StatusEffectInstance(StatusEffects.SPEED, 1000, 1, false, false, true)
                     )
-                    .build();
+            ).build();
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)

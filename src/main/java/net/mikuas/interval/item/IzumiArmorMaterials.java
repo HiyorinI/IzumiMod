@@ -71,7 +71,7 @@ public class IzumiArmorMaterials
 
         return Registry.registerReference(
                 Registries.ARMOR_MATERIAL,
-                Identifier.ofVanilla(id),
+                Identifier.of(Interval.MOD_ID, id),
                 new ArmorMaterial(enumMap, enchantability, equipSound, repairIngredient, layers, toughness, knockbackResistance)
         );
     }

@@ -19,6 +19,9 @@ public class RenderLayersMixin
 {
     @Shadow @Final private static Map<Block, RenderLayer> BLOCKS;
 
+    /**
+     * 透明通道
+     */
     @Inject(method = "<clinit>", at = @At("RETURN"))
     private static void onBlockInit(CallbackInfo info)
     {
@@ -26,6 +29,12 @@ public class RenderLayersMixin
         BLOCKS.put(IzumiBlocks.IZUMI_VOID_TRAPDOOR, RenderLayer.getCutout());
         BLOCKS.put(IzumiBlocks.IZUMI_CROP, RenderLayer.getCutout());
         BLOCKS.put(IzumiBlocks.IZUMI_MULTI_CROP, RenderLayer.getCutout());
-    }
 
+        // 树苗
+        BLOCKS.put(IzumiBlocks.IZUMI_SAPLING, RenderLayer.getCutout());
+
+        // 花, 盆栽
+        BLOCKS.put(IzumiBlocks.IZUMI_SIMPLE_FLOWER, RenderLayer.getCutout());
+        BLOCKS.put(IzumiBlocks.IZUMI_POTTED_SIMPLE_FLOWER, RenderLayer.getCutout());
+    }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "interval:block/izumi_log_top",
+    "side": "interval:block/izumi_log"
+  }
+}

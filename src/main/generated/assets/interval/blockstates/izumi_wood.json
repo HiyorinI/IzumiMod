@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "interval:block/izumi_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "interval:block/izumi_wood"
+    },
+    "axis=z": {
+      "model": "interval:block/izumi_wood",
+      "x": 90
+    }
+  }
+}

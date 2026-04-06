@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.interval.no_good"
+  },
+  "length_in_seconds": 244.0,
+  "sound_event": "interval:music_disc.no_good"
+}

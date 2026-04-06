@@ -25,6 +25,12 @@ public class IzumiBlockFamilies
             .unlockCriterionName("has_izumi_ether_amber")
             .build();
 
+    public static final BlockFamily IZUMI_WOOD = register(IzumiBlocks.IZUMI_PLANKS)
+            .sign(IzumiBlocks.IZUMI_SIGN, IzumiBlocks.IZUMI_WALL_SIGN)
+            .group("wooden")
+            .unlockCriterionName("has_planks")
+            .build();
+
     public static final BlockFamily IZUMI_VOID_MIST_BLOCK_FAMILY = register(IzumiBlocks.IZUMI_VOID_MIST)
             .door(IzumiBlocks.IZUMI_VOID_DOOR)
             .trapdoor(IzumiBlocks.IZUMI_VOID_TRAPDOOR)

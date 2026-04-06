@@ -1,30 +1,50 @@
-/tick
+/give @a interval:izumi_ether_slab 32
+/locate structure minecraft:jungle_pyramid
+/tp @s -992 ~ -1296
 /time set day
-/give @a interval:izumi_void_door 1
+/give @a minecraft:light 1
 /time set day
-/give @a interval:izumi_void_trapdoor 1
-/give @a interval:izumi_seed 2
-/give @a interval:izumi_clsy 1
-/give @a interval:izumi_crop 1
-/give @a interval:izumi_crop
-/give @a interval:izumi_cphn 1
-/give @a interval:izumi_clsy 1
-/time set day
-/tick step 1s
-/give @a interval:izumi_multi_crop_seed 1
+/give @a interval:no_good_music_disc 1
+/give @a interval:the_way_that_i_loved_you_music_disc 1
+/give @a interval:flower_tower_music_disc 1
+/give @a interval:pinky_oath_music_disc 1
 /kill @e[type=!minecraft:player]
-/effect give @a minecraft:bad_omen
-/effect give @a minecraft:hunger
+/weather rain
 /time set day
-/give Player589 interval:izumi_sword 1
-/effect give @a minecraft:hunger
-/effect give @a minecraft:hunger 3
-/effect give @a minecraft:hunger 2
-/effect give @a minecraft:hunger 1
-/effect give @a minecraft:hunger infinite 1
-/give @a interval:izumi_void_mist 32
-/give @a interval:izumi_food_star_rail 2
-/give @a interval:izumi_food_pai_meng 3
+/weather rain
+/give @a minecraft:coal 64
 /time set day
-/give @a interval:izumi_mimi 1024
-/time set night
+/give @a interval:pinky_oath_music_disc 1
+/give @a interval:izumi_pickaxe 1
+/give @a interval:izumi_shovel 1
+/give @a interval:izumi_axe 1
+/give @a interval:izumi_simple_fence 1
+/give @a interval:izumi_log 1
+/give @a interval:izumi_wood 1
+/give @a interval:izumi_leaves 1
+/give @a interval:izumi_planks 1
+/give @a interval:stripped_izumi_log 1
+/give @a interval:stripped_izumi_wood 1
+/give @a interval:izumi_axe 1
+/weather rain
+/give @a interval:izumi_tree_sapling 1
+/fill 65 77 0 128 70 100 minecraft:air
+/fill 65 77 0 100 70 35 minecraft:air
+/fill 65 80 0 100 70 35 minecraft:air
+/fill 65 100 0 100 70 35 minecraft:air
+/fill 65 100 0 100 75 35 minecraft:air
+/fill 65 100 0 100 80 35 minecraft:air
+/kill @e[type=!minecraft:player]
+/time set day
+/fill 65 69 0 100 70 35 minecraft:grass_block
+/give @a interval:izumi_simple_flower 1
+/give @a minecraft:potato 1
+/give @a minecraft:pointed_dripstone 1
+/give @a minecraft:potion 1
+/give @a interval:izumi_planks 32
+/give @a minecraft:bow 1
+/give @a minecraft:bone 1
+/give @a minecraft:bowl 1
+/time set day
+/locate biome minecraft:plains
+/tp @s -207 113 163

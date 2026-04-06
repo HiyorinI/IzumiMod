@@ -1,0 +1,8 @@
+{
+  "comparator_output": 5,
+  "description": {
+    "translate": "jukebox_song.interval.the_way_that_i_loved_you"
+  },
+  "length_in_seconds": 193.0,
+  "sound_event": "interval:music_disc.the_way_that_i_loved_you"
+}

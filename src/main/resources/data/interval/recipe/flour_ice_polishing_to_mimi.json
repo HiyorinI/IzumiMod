@@ -1,0 +1,13 @@
+{
+  "type": "interval:polishing_machine",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "interval:izumi_fluor_ice"
+    }
+  ],
+  "output": {
+    "count": 16,
+    "id": "interval:izumi_mimi"
+  }
+}

@@ -11,17 +11,20 @@ import java.util.function.Supplier;
 
 public enum IzumiToolMaterials implements ToolMaterial
 {
-    IZUMI_LXTL(
-            BlockTags.INCORRECT_FOR_IRON_TOOL, // 等级
-            1145,                              // 耐久值
-            14.0F,                               // 采集速度
-            24.0F,                             // 伤害
-            50,                                // 附魔能力
-            () -> Ingredient.ofItems(IzumiItems.IZUMI_CLSY) // 修复材料
-    ),
+//    IZUMI_LXTL(
+//            BlockTags.INCORRECT_FOR_IRON_TOOL, // 等级
+//            1145,                              // 耐久值
+//            14.0F,                               // 采集速度
+//            24.0F,                             // 伤害
+//            50,                                // 附魔能力
+//            () -> Ingredient.ofItems(IzumiItems.IZUMI_CLSY) // 修复材料
+//    ),
 
     // 合金工具 INCORRECT_FOR_NETHERITE_TOOL
-    IZUMI_PICKAXE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2077, 32.0F, 12.0F, 50, () -> Ingredient.ofItems(IzumiItems.IZUMI_LXTL));
+    IZUMI_PICKAXE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3072, 64.0F, 32.0F, 48, () -> Ingredient.ofItems(IzumiItems.IZUMI_LXTL)),
+
+    // 钻石
+    IZUMI_DIAMOND(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2048, 32.0F, 16.0F, 24, () -> Ingredient.ofItems(IzumiItems.IZUMI_LXTL));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -37,7 +40,8 @@ public enum IzumiToolMaterials implements ToolMaterial
             final float attackDamage,
             final int enchantability,
             final Supplier<Ingredient> repairIngredient
-    ) {
+    )
+    {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

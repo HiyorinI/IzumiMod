@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "interval:izumi_void_mist_point",
+      "required": false
+    },
+    {
+      "id": "interval:izumi_fluor_ice_point",
+      "required": false
+    }
+  ]
+}

@@ -11,9 +11,9 @@ import java.util.List;
 
 public class IzumiItem extends Item
 {
-    private boolean HAS_SHIFT_TOOLTIP = false;
-    private String shiftTooltip = "";
-    private String tooltip = "";
+    private boolean isHasShiftTooltip = false;
+    private String shiftTooltip = null;
+    private String tooltip = null;
 
     public IzumiItem(Settings settings)
     {
@@ -22,8 +22,13 @@ public class IzumiItem extends Item
 
     public IzumiItem hasShiftTooltip()
     {
-        HAS_SHIFT_TOOLTIP = true;
+        this.isHasShiftTooltip = true;
         return this;
+    }
+
+    public boolean isHasShiftTooltip()
+    {
+        return this.isHasShiftTooltip;
     }
 
     public IzumiItem setTooltip(String tooltip)
@@ -43,7 +48,10 @@ public class IzumiItem extends Item
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type)
     {
         super.appendTooltip(stack, context, tooltip, type);
-        MutableText text = Text.translatable(HAS_SHIFT_TOOLTIP && Screen.hasShiftDown() ? this.shiftTooltip : this.tooltip);
-        tooltip.add(text);
+        if (this.tooltip != null)
+        {
+            MutableText text = Text.translatable(this.isHasShiftTooltip() && Screen.hasShiftDown() ? this.shiftTooltip : this.tooltip);
+            tooltip.add(text);
+        }
     }
 }

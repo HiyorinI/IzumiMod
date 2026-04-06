@@ -22,7 +22,7 @@ narrator:0
 particles:0
 reducedDebugInfo:false
 renderClouds:"true"
-renderDistance:12
+renderDistance:8
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""
@@ -48,7 +48,7 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric"]
+resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
 lang:zh_cn

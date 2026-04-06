@@ -2,6 +2,17 @@
   "values": [
     "interval:izumi_fluor_ice",
     "interval:izumi_ether_amber",
-    "interval:izumi_flux_crystal"
+    "interval:izumi_flux_crystal",
+    "interval:izumi_ai_yin",
+    "interval:izumi_ether_stairs",
+    "interval:izumi_ether_slab",
+    "interval:izumi_ether_button",
+    "interval:izumi_ether_pressure_plate",
+    "interval:izumi_ether_fence",
+    "interval:izumi_ether_fence_gate",
+    "interval:izumi_ether_wall",
+    "interval:izumi_ether_door",
+    "interval:izumi_ether_trapdoor",
+    "interval:izumi_simple_block"
   ]
 }

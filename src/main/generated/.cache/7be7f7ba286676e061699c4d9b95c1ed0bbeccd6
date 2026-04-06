@@ -1,10 +1,12 @@
-// 1.21	2026-03-19T13:43:48.6706175	interval/Tags for minecraft:block
-215fdb9db7aedd9ca3d8beb433c2b45c42a8e0a7 data\minecraft\tags\block\mineable\pickaxe.json
+// 1.21	2026-04-06T23:59:08.651579	interval/Tags for minecraft:block
+7f5df538622200ae2ef9bfec37d6b41e0f44f90e data\minecraft\tags\block\mineable\pickaxe.json
 d2f45a7eac4cb6c31dc629ec12cfefe3e1dc3ecd data\minecraft\tags\block\buttons.json
 95e80d4b3b1f366169899180e83d733c0701af44 data\minecraft\tags\block\fence_gates.json
 16eca37a2fa8c7ff1f5682021bf96a4612b55b3b data\minecraft\tags\block\walls.json
-511f2be7fd5f6ab99f02e262610e93e4beb0f714 data\minecraft\tags\block\needs_stone_tool.json
+7abf125f5afb2ace0229d8ee6ace7dd0ebdfe93d data\minecraft\tags\block\needs_stone_tool.json
 a3fe6319a10ecf3404746b38662fa389d36a93cd data\minecraft\tags\block\fences.json
+5a4566cc6f1ef4f41511f4d8f60f868e79e3ea87 data\minecraft\tags\block\logs_that_burn.json
 a3fe6319a10ecf3404746b38662fa389d36a93cd data\minecraft\tags\block\wooden_fences.json
 3674a0a32d29bd6a71f41c0b8ea6c5e57a8af499 data\interval\tags\block\ore_list.json
-0f9b4818abdc3b9fdb842320779f580f5d486d93 data\minecraft\tags\block\needs_iron_tool.json
+e174089d2511a739446e869d38459d7132e8afe2 data\minecraft\tags\block\planks.json
+d07eeffac5e843961d99f2e8d0c279a5f8d7f7e6 data\minecraft\tags\block\needs_iron_tool.json

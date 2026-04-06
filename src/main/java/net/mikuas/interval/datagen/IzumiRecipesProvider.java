@@ -11,6 +11,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.CampfireCookingRecipe;
@@ -235,5 +236,45 @@ public class IzumiRecipesProvider extends FabricRecipeProvider
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiItems.IZUMI_LXTL))
                 .offerTo(exporter, Identifier.of(Interval.MOD_ID,  "cphn_clsy_lxtl_ether_pai_meng"));
 
+        // 木头
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .input(IzumiBlocks.IZUMI_LOG)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.IZUMI_LOG))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_log_to_izumi_planks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .input(IzumiBlocks.IZUMI_WOOD)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.IZUMI_WOOD))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_wood_to_izumi_planks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .input(IzumiBlocks.STRIPPED_IZUMI_LOG)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.STRIPPED_IZUMI_LOG))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_log_to_izumi_plaks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .input(IzumiBlocks.STRIPPED_IZUMI_WOOD)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.STRIPPED_IZUMI_WOOD))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_wood_to_izumi_planks"));
+
+        /*
+            唱片
+         */
+        createMusicDiscFormula(IzumiItems.NO_GOOD_MUSIC_DISC, Items.IRON_INGOT, exporter, "copper_iron_ingot_to_no_good_music_disc"); // 铁锭
+        createMusicDiscFormula(IzumiItems.THE_WAY_THAT_I_LOVED_YOU_MUSIC_DISC, Items.GOLD_INGOT, exporter, "copper_gold_ingot_to_the_way_that_i_loved_you_music_disc"); // 金锭
+        createMusicDiscFormula(IzumiItems.PINKY_OATH_MUSIC_DISC, Items.DIAMOND, exporter, "copper_diamond_to_pinky_oath_music_disc"); // 钻石
+        createMusicDiscFormula(IzumiItems.FLOWER_TOWER_MUSIC_DISC, Items.NETHERITE_INGOT, exporter, "copper_entherite_ingot_to_flower_tower_music_disc"); // 合金
+    }
+
+    private static void createMusicDiscFormula(Item musicDiscItem, Item mainItem, RecipeExporter exporter, String name)
+    {
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC, musicDiscItem, 1)
+                .pattern(" X ")
+                .pattern("###")
+                .pattern(" Y ")
+                .input('X', Ingredient.ofItems(Items.COPPER_INGOT))
+                .input('#', Ingredient.ofItems(mainItem))
+                .input('Y', Ingredient.ofItems(Items.COPPER_INGOT))
+                .criterion("has_item", RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .criterion("has_item", RecipeProvider.conditionsFromItem(mainItem))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, name));
     }
 }

@@ -1,3 +1,6 @@
-// 1.21	2026-03-19T13:43:48.6716144	interval/Tags for minecraft:item
+// 1.21	2026-04-06T23:59:08.651579	interval/Tags for minecraft:item
 65e4e0c3bae377cdf094a325dd6d808c9a2b2ff8 data\minecraft\tags\item\trimmable_armor.json
 628965728f2ce243c0d2d728c8110fb3a97189b9 data\interval\tags\item\apple_tag.json
+e174089d2511a739446e869d38459d7132e8afe2 data\minecraft\tags\item\planks.json
+37b5c56aa10aab97df69a416a20890a3d58213f2 data\minecraft\tags\item\creeper_drop_music_discs.json
+5a4566cc6f1ef4f41511f4d8f60f868e79e3ea87 data\minecraft\tags\item\logs_that_burn.json

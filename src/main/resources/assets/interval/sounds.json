@@ -1,0 +1,52 @@
+{
+  "izumi_ai_yin_block_break": {
+    "subtitle": "sounds.interval.izumi_ai_yin_block_break",
+    "sounds": [
+      "interval:izumi_ai_yin_block_break"
+    ]
+  },
+  "izumi_ai_yin_block_step": {
+    "subtitle": "sounds.interval.izumi_ai_yin_block_step",
+    "sounds": [
+      "interval:izumi_ai_yin_block_step"
+    ]
+  },
+  "izumi_ai_yin_block_place": {
+    "subtitle": "sounds.interval.izumi_ai_yin_block_place",
+    "sounds": [
+      "interval:izumi_ai_yin_block_place"
+    ]
+  },
+  "izumi_ai_yin_block_hit": {
+    "subtitle": "sounds.interval.izumi_ai_yin_block_hit",
+    "sounds": [
+      "interval:izumi_ai_yin_block_hit"
+    ]
+  },
+  "izumi_ai_yin_block_fall": {
+    "subtitle": "sounds.interval.izumi_ai_yin_block_fall",
+    "sounds": [
+      "interval:izumi_ai_yin_block_fall"
+    ]
+  },
+  "music_disc.no_good": {
+    "sounds": [
+      "interval:no_good"
+    ]
+  },
+  "music_disc.the_way_that_i_loved_you": {
+    "sounds": [
+      "interval:the_way_that_i_loved_you"
+    ]
+  },
+  "music_disc.pinky_oath": {
+    "sounds": [
+      "interval:pinky_oath"
+    ]
+  },
+  "music_disc.flower_tower": {
+    "sounds": [
+      "interval:flower_tower"
+    ]
+  }
+}

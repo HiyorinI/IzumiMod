@@ -18,6 +18,9 @@
     ],
     "main": [
       "net.mikuas.interval.Interval"
+    ],
+    "rei_client": [
+      "net.mikuas.interval.compat.IzumiREIClientPlugins"
     ]
   },
   "mixins": [

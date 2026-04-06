@@ -1,0 +1,8 @@
+{
+  "comparator_output": 3,
+  "description": {
+    "translate": "jukebox_song.interval.flower_tower"
+  },
+  "length_in_seconds": 275.0,
+  "sound_event": "interval:music_disc.flower_tower"
+}

@@ -1,5 +1,7 @@
 {
   "values": [
-    "interval:izumi_fluor_ice"
+    "interval:izumi_fluor_ice",
+    "interval:izumi_ai_yin",
+    "interval:izumi_simple_block"
   ]
 }
