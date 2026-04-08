@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "interval:izumi_fire_ether"
+  },
+  "base": {
+    "item": "interval:izumi_mimi"
+  },
+  "result": {
+    "count": 1,
+    "id": "interval:izumi_sword"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

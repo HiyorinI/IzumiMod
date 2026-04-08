@@ -1,50 +1,50 @@
-/give @a interval:izumi_ether_slab 32
-/locate structure minecraft:jungle_pyramid
-/tp @s -992 ~ -1296
-/time set day
-/give @a minecraft:light 1
-/time set day
-/give @a interval:no_good_music_disc 1
-/give @a interval:the_way_that_i_loved_you_music_disc 1
-/give @a interval:flower_tower_music_disc 1
-/give @a interval:pinky_oath_music_disc 1
-/kill @e[type=!minecraft:player]
-/weather rain
-/time set day
-/weather rain
-/give @a minecraft:coal 64
-/time set day
-/give @a interval:pinky_oath_music_disc 1
-/give @a interval:izumi_pickaxe 1
-/give @a interval:izumi_shovel 1
-/give @a interval:izumi_axe 1
-/give @a interval:izumi_simple_fence 1
-/give @a interval:izumi_log 1
-/give @a interval:izumi_wood 1
-/give @a interval:izumi_leaves 1
-/give @a interval:izumi_planks 1
-/give @a interval:stripped_izumi_log 1
-/give @a interval:stripped_izumi_wood 1
-/give @a interval:izumi_axe 1
-/weather rain
-/give @a interval:izumi_tree_sapling 1
-/fill 65 77 0 128 70 100 minecraft:air
-/fill 65 77 0 100 70 35 minecraft:air
-/fill 65 80 0 100 70 35 minecraft:air
-/fill 65 100 0 100 70 35 minecraft:air
-/fill 65 100 0 100 75 35 minecraft:air
-/fill 65 100 0 100 80 35 minecraft:air
-/kill @e[type=!minecraft:player]
-/time set day
-/fill 65 69 0 100 70 35 minecraft:grass_block
-/give @a interval:izumi_simple_flower 1
-/give @a minecraft:potato 1
-/give @a minecraft:pointed_dripstone 1
-/give @a minecraft:potion 1
-/give @a interval:izumi_planks 32
 /give @a minecraft:bow 1
 /give @a minecraft:bone 1
 /give @a minecraft:bowl 1
 /time set day
 /locate biome minecraft:plains
 /tp @s -207 113 163
+/give @a interval:izumi_mimi 64
+/summon interval:tiger
+/locate biome interval:izumi_void_mist_biome
+/tp @s -165 112 -129
+/
+/locate biome interval:izumi_void_mist_biome
+/tp @s 310 64 653
+/locate biome interval:izumi_void_mist_biome
+/tp @s -169 79 -137
+/locate biome interval:izumi_void_mist_biome
+/locate biome minecraft:plains
+/tp @s -182 89 -69
+/locate biome interval:izumi_void_mist_biome
+/tp @s 486 88 91
+/particle interval:izumi_green_flame 714.98 109.00 604.91 1 1 1 0.1 5000 force
+/particle interval:izumi_green_flame 714.98 109.00 604.91 10 10 10 0.1 5000 force
+/particle interval:izumi_green_flame 714.98 109.00 604.91 10 10 10 0.1 50000 force
+/particle interval:izumi_green_flame 714.98 109.00 604.91 10 10 10 0.1 100000 force
+/particle interval:izumi_green_flame 714.98 109.00 604.91 10 10 10 0.1 1000000 force
+/particle interval:izumi_green_flame 714.98 109.00 604.91 5 5 5 0.1 1000000 force
+/give @a minecraft:command_block 1
+/give @a minecraft:structure_block 1
+/fill -261 85 -329 -250 85 -329 minecraft:air
+/fill -261 85 -329 -250 85 -320 minecraft:air
+/fill -261 85 -329 -250 85 -300 minecraft:air
+/fill -261 85 -329 -250 90 -300 minecraft:air
+/fill -261 85 -329 -250 90 -320 minecraft:air
+/fill -261 85 -329 -250 90 -329 minecraft:air
+/fill -261 85 -329 -251 90 -329 minecraft:air
+/give @a minecraft:light 1
+/give @a minecraft:structure_void 1
+/fill -353 63 -309 -350 75 -300 minecraft:air
+/fill -353 75 -309 -350 95 -300 minecraft:air
+/fill -353 75 -309 -350 125 -300 minecraft:air
+/fill -353 95 -309 -350 125 -300 minecraft:air
+/fill -353 95 -309 -350 115 -300 minecraft:air
+/locate structure interval:house
+/tp @s -192 ~ -224
+/time set day
+/summon interval:tiger
+/summon minecraft:ender_dragon
+/give @a minecraft:fire_charge 1
+/give @a minecraft:fire_coral 1
+/give @a minecraft:fire_coral_fan 1

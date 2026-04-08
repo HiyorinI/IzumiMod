@@ -1,0 +1,60 @@
+{
+  // 用于结构行为的基础结构类。（比如额外的地形检查之类的）
+  "type": "minecraft:jigsaw",
+
+  // 模板池的路径 JSON 文件
+  "start_pool": "interval:start_pool",
+
+  // 这是结构中一个部件在起始部件附近能生成多少块
+  // 可以把它想象成结构分支的长度
+  "size": 1,
+
+  // 碎片能生成的最大距离。不能超过128
+  "max_distance_from_center": 80,
+
+  // 用于生成该结构的生物群系标签
+  "biomes": "#interval:has_structure/house",
+
+  // 生成步骤，决定何时生成结构。你可以从10个关卡中选择！
+  // 该地表结构阶段将结构置于植物和矿石生成之前
+  // 请参见 GenerationStep.Feature 枚举，了解所有可用阶段及其顺序
+  "step": "surface_structures",
+
+  // 如果没有project_start_to_heightmap，在哪里生成我们的结构，y值是多少。
+  // start_height可以通过以下操作以随机固定的y值生成，比如：“max_inclusive”： { “below_top”： 10 }， “min_inclusive”： { “above_bottom”： 32 }
+  // 如果project_start_to_heightmap存在，start_height中选择的y值将加到地形的y值上。
+  // 所以起始高度为-5时，结构会沉入地形5格。这里，我们将在距离地形60格的地方生成这个结构。
+  "start_height": {
+    "absolute": 0
+  },
+
+  // Makes our sky fan structure take the terrain's top y value and add it to the start_height y value above.
+  // The final value is the y value the structures spawn at.
+  // WORLD_SURFACE_WG will stop at first non-air block so it spawns above oceans always instead of sunken into a deep sea.
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  // Keep this false. This is only for vanilla legacy villages to make it spawn properly. We don't need no hacks here!
+  "use_expansion_hack": false,
+
+  // What mobs can spawn over time in the structure.
+  // Make sure you add the mob to the right category (monster, creature, etc)
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:evoker",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "type": "minecraft:phantom",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  }
+}

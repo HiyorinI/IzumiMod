@@ -25,7 +25,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class IzumiLootTableProvider extends FabricBlockLootTableProvider
 {
-    public IzumiLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    public IzumiLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
+    {
         super(dataOutput, registryLookup);
     }
 

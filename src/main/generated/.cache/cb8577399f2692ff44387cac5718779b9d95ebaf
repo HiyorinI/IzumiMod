@@ -1,4 +1,4 @@
-// 1.21	2026-04-06T23:59:08.6549554	interval/Block Loot Tables
+// 1.21	2026-04-08T22:08:28.224033	interval/Block Loot Tables
 4813544b85f1d91f70ae5bdce3be606f5f176f10 data\interval\loot_table\blocks\izumi_ether_trapdoor.json
 2b05aa71934d757ecb9280cc5c8672a0e3eba0e1 data\interval\loot_table\blocks\izumi_ether_door.json
 1dd3fdd6578cd60d7611e4731792b94165b4fe0a data\interval\loot_table\blocks\izumi_crop.json
@@ -6,9 +6,9 @@
 ea2b93f5a78f06b0c69a4dfe06fc0f32425208d2 data\interval\loot_table\blocks\izumi_ether_stairs.json
 1b2717983d684edec48c3cf3349e69d2b7e99bd8 data\interval\loot_table\blocks\izumi_void_mist.json
 e48b2f8b5d2086d134104e6b8bc29a12b8ae2909 data\interval\loot_table\blocks\izumi_ether_amber.json
-bf1dc826cd26c08c1c291a6e623327713a040c5f data\interval\loot_table\blocks\izumi_simple_block.json
 82abc16a3d2f23667bc414739fcd71da21c9b24c data\interval\loot_table\blocks\izumi_multi_crop.json
 0d2ac4a3c14e1b3d80430f4cce3ae35476dc0eaf data\interval\loot_table\blocks\izumi_simple_flower.json
+bf1dc826cd26c08c1c291a6e623327713a040c5f data\interval\loot_table\blocks\izumi_simple_block.json
 09bf884aa538abca62cccf93f38cb1aa6f3034a0 data\interval\loot_table\blocks\izumi_flux_crystal.json
 36af0e725bffe7a2941ba94169a2585773b895e2 data\interval\loot_table\blocks\izumi_ether_pressure_plate.json
 1018f832eb8486991a6bcf721461fbd1e37ac4c2 data\interval\loot_table\blocks\izumi_ether_button.json

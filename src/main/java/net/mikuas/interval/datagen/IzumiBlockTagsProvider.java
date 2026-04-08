@@ -3,15 +3,18 @@ package net.mikuas.interval.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.mikuas.interval.block.IzumiBlocks;
+import net.mikuas.interval.item.IzumiItems;
 import net.mikuas.interval.tags.IzumiBlockTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
 public class IzumiBlockTagsProvider extends FabricTagProvider.BlockTagProvider
 {
-    public IzumiBlockTagsProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+    public IzumiBlockTagsProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture)
+    {
         super(output, registriesFuture);
     }
 

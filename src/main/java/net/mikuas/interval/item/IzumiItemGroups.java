@@ -133,6 +133,12 @@ public class IzumiItemGroups
                             // 花, 盆栽
                             entries.add(IzumiBlocks.IZUMI_SIMPLE_FLOWER);
                             // entries.add(IzumiBlocks.IZUMI_POTTED_SIMPLE_FLOWER);
+
+                            // 合成消耗物品
+                            entries.add(IzumiItems.IZUMI_FIRE_ETHER);
+
+                            // 刷怪蛋
+                            entries.add(IzumiItems.TIGER_SPAWN_EGG);
                         }))
                         .build()
         );

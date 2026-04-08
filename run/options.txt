@@ -48,10 +48,10 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:[]
+resourcePacks:["fabric"]
 incompatibleResourcePacks:[]
 lastServer:
-lang:zh_cn
+lang:en_us
 chatVisibility:0
 chatOpacity:1.0
 chatLineSpacing:0.0

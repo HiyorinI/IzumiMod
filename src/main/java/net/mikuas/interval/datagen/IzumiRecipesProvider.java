@@ -225,7 +225,7 @@ public class IzumiRecipesProvider extends FabricRecipeProvider
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, IzumiItems.IZUMI_CPHN)
                 .input(IzumiItems.IZUMI_MIMI)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiItems.IZUMI_MIMI))
-                .offerTo(exporter, Identifier.of(Interval.MOD_ID,  "mimi_to_cphn"));
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID,  "mimi_ether_cphn"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, IzumiItems.IZUMI_FOOD_PAI_MENG)
                 .input(IzumiItems.IZUMI_CPHN)
@@ -237,22 +237,28 @@ public class IzumiRecipesProvider extends FabricRecipeProvider
                 .offerTo(exporter, Identifier.of(Interval.MOD_ID,  "cphn_clsy_lxtl_ether_pai_meng"));
 
         // 木头
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS, 4)
                 .input(IzumiBlocks.IZUMI_LOG)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.IZUMI_LOG))
-                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_log_to_izumi_planks"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_log_ether_izumi_planks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS, 4)
                 .input(IzumiBlocks.IZUMI_WOOD)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.IZUMI_WOOD))
-                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_wood_to_izumi_planks"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_wood_ether_izumi_planks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS, 4)
                 .input(IzumiBlocks.STRIPPED_IZUMI_LOG)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.STRIPPED_IZUMI_LOG))
-                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_log_to_izumi_plaks"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS)
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_log_ether_izumi_plaks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, IzumiBlocks.IZUMI_PLANKS, 4)
                 .input(IzumiBlocks.STRIPPED_IZUMI_WOOD)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(IzumiBlocks.STRIPPED_IZUMI_WOOD))
-                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_wood_to_izumi_planks"));
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "stripped_izumi_wood_ether_izumi_planks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, IzumiItems.IZUMI_LXTL, 1)
+                .input(IzumiItems.IZUMI_MIMI)
+                .input(IzumiItems.IZUMI_FIRE_ETHER)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(Items.COAL))
+                .offerTo(exporter, Identifier.of(Interval.MOD_ID, "izumi_mimi_izumi_fire_ether_izumi_lxtl"));
 
         /*
             唱片

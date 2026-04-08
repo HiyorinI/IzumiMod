@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
-    "ExampleMixin"
+    "ExampleMixin",
+    "RepairItemRecipeMixin",
+    "SmithingScreenHandlerMixin"
   ],
   "client": [
     "RenderLayersMixin"

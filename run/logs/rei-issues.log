@@ -1,9 +1,9 @@
-[23:59:47] [REI-ReloadPlugins/ERROR] [REI] Failed to collect creative tab: net.minecraft.item.ItemGroup@552ba2c1
+[22:09:31] [REI-ReloadPlugins/ERROR] [REI] Failed to collect creative tab: net.minecraft.item.ItemGroup@3221ffea
 java.lang.IllegalStateException: Registry minecraft:banner_pattern not found
-	at knot//net.minecraft.registry.RegistryWrapper$WrapperLookup.method_46763(RegistryWrapper.java:113)
+	at knot//net.minecraft.registry.RegistryWrapper$WrapperLookup.method_46763(RegistryWrapper.java:107)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at knot//net.minecraft.registry.RegistryWrapper$WrapperLookup.getWrapperOrThrow(RegistryWrapper.java:113)
-	at knot//net.minecraft.item.ItemGroups.method_51332(ItemGroups.java:1106)
+	at knot//net.minecraft.registry.RegistryWrapper$WrapperLookup.getWrapperOrThrow(RegistryWrapper.java:107)
+	at knot//net.minecraft.item.ItemGroups.method_51332(ItemGroups.java:1266)
 	at knot//me.shedaniel.rei.impl.client.fabric.CreativeModeTabCollectorImpl.collectTabs(CreativeModeTabCollectorImpl.java:56)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

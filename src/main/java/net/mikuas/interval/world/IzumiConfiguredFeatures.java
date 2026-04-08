@@ -84,9 +84,7 @@ public class IzumiConfiguredFeatures
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Interval.MOD_ID, id));
     }
 
-    public static <FC extends FeatureConfig, F extends Feature<FC>> void register(
-            Registerable<ConfiguredFeature<?, ?>> registerable, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC config
-    )
+    public static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> registerable, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC config)
     {
         registerable.register(key, new ConfiguredFeature<FC, F>(feature, config));
     }

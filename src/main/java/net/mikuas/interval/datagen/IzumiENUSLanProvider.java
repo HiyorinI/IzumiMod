@@ -14,7 +14,8 @@ public class IzumiENUSLanProvider extends FabricLanguageProvider
 {
     private static final String Villager = "entity.minecraft.villager.";
 
-    public IzumiENUSLanProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    public IzumiENUSLanProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
+    {
         super(dataOutput, "en_us", registryLookup);
     }
 

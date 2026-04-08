@@ -11,7 +11,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 import java.util.List;
 
@@ -70,22 +69,12 @@ public class IzumiPlacedFeatures
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(Interval.MOD_ID, id));
     }
 
-    public static void register(
-            Registerable<PlacedFeature> featureRegisterable,
-            RegistryKey<PlacedFeature> key,
-            RegistryEntry<ConfiguredFeature<?, ?>> feature,
-            List<PlacementModifier> modifiers
-    )
+    public static void register(Registerable<PlacedFeature> featureRegisterable, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> feature, List<PlacementModifier> modifiers)
     {
         featureRegisterable.register(key, new PlacedFeature(feature, List.copyOf(modifiers)));
     }
 
-    public static void register(
-            Registerable<PlacedFeature> featureRegisterable,
-            RegistryKey<PlacedFeature> key,
-            RegistryEntry<ConfiguredFeature<?, ?>> feature,
-            PlacementModifier... modifiers
-    )
+    public static void register(Registerable<PlacedFeature> featureRegisterable, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers)
     {
         register(featureRegisterable, key, feature, List.of(modifiers));
     }

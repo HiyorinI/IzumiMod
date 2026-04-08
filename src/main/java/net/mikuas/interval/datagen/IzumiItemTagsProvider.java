@@ -48,5 +48,14 @@ public class IzumiItemTagsProvider extends FabricTagProvider.ItemTagProvider
                 .add(IzumiBlocks.STRIPPED_IZUMI_WOOD.asItem());
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(IzumiBlocks.IZUMI_PLANKS.asItem());
+
+        // 附魔
+        getOrCreateTagBuilder(ItemTags.SWORD_ENCHANTABLE)
+                .add(IzumiItems.IZUMI_SWORD);
+        getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
+                .add(IzumiItems.IZUMI_PICKAXE)
+                .add(IzumiItems.IZUMI_HOE)
+                .add(IzumiItems.IZUMI_SHOVEL)
+                .add(IzumiItems.IZUMI_AXE);
     }
 }

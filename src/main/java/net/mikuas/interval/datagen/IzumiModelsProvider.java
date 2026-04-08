@@ -14,7 +14,8 @@ import net.minecraft.state.property.Properties;
 
 public class IzumiModelsProvider extends FabricModelProvider
 {
-    public IzumiModelsProvider(FabricDataOutput output) {
+    public IzumiModelsProvider(FabricDataOutput output)
+    {
         super(output);
     }
 
@@ -158,5 +159,8 @@ public class IzumiModelsProvider extends FabricModelProvider
         // 船
         itemModelGenerator.register(IzumiItems.IZUMI_BOAT, Models.GENERATED);
         itemModelGenerator.register(IzumiItems.IZUMI_CHEST_BOAT, Models.GENERATED);
+
+        //
+        itemModelGenerator.register(IzumiItems.IZUMI_FIRE_ETHER, Models.GENERATED);
     }
 }

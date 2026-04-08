@@ -5,12 +5,9 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.mikuas.interval.Interval;
 import net.mikuas.interval.block.IzumiBlocks;
 import net.mikuas.interval.block.IzumiFluids;
-import net.mikuas.interval.block.custom.IzumiBlock;
 import net.mikuas.interval.entity.IzumiBoats;
-import net.mikuas.interval.item.custom.HatItem;
-import net.mikuas.interval.item.custom.IzumiArmorItem;
-import net.mikuas.interval.item.custom.IzumiItem;
-import net.mikuas.interval.item.custom.Prospector;
+import net.mikuas.interval.entity.IzumiEntities;
+import net.mikuas.interval.item.custom.*;
 import net.mikuas.interval.sound.IzumiJukeboxSongs;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -98,28 +95,28 @@ public class IzumiItems
     // 头盔
     public static final Item IZUMI_HELMET = registerItems("izumi_helmet", new IzumiArmorItem(
             IzumiArmorMaterials.IZUMI_LXTL,
-            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(24)
-    )));
+            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(24))
+    ));
     // 护甲
     public static final Item IZUMI_CHESTPLATE = registerItems("izumi_chestplate", new IzumiArmorItem(
             IzumiArmorMaterials.IZUMI_LXTL,
-            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(24)
-    )));
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(24))
+    ));
     // 护腿
     public static final Item IZUMI_LEGGINGS = registerItems("izumi_leggings", new IzumiArmorItem(
             IzumiArmorMaterials.IZUMI_LXTL,
-            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(24)
-    )));
+            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(24))
+    ));
     // 鞋子
     public static final Item IZUMI_BOOTS = registerItems("izumi_boots", new IzumiArmorItem(
             IzumiArmorMaterials.IZUMI_LXTL,
-            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(24)
-    )));
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(24))
+    ));
 
     // 帽子
     public static final Item IZUMI_HAT = registerItems("izumi_hat", new HatItem(
-            HatItem.Type.Hat, new Item.Settings().maxDamage(HatItem.Type.Hat.getMaxDamage(12)
-    )));
+            HatItem.Type.Hat, new Item.Settings().maxDamage(HatItem.Type.Hat.getMaxDamage(12))
+    ));
 
     // 作物
     // 种子
@@ -178,6 +175,14 @@ public class IzumiItems
     public static final Item IZUMI_BOAT= TerraformBoatItemHelper.registerBoatItem(IzumiBoats.IZUMI_BOAT, IzumiBoats.IZUMI_BOAT_KEY, false);
     public static final Item IZUMI_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(IzumiBoats.IZUMI_CHEST_BOAT, IzumiBoats.IZUMI_BOAT_KEY, true);
 
+    // 耐久合成
+    public static final Item IZUMI_FIRE_ETHER = registerItems("izumi_fire_ether", new FireEther(new Item.Settings()));
+
+    // 刷怪蛋
+    public static final Item TIGER_SPAWN_EGG = registerItems("tiger_spawn_egg", new SpawnEggItem(
+            IzumiEntities.TIGER, 0XFF6A9B, 0X9DDDFE, new Item.Settings()
+    ));
+
     private static Item registerItems(String id, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(Interval.MOD_ID, id), item);
@@ -201,10 +206,12 @@ public class IzumiItems
         fabricItemGroupEntries.add(PROSPECTOR);
     }
 
+    /**
+     * 使用 AIP 添加到原版物品栏
+     */
     public static void registerModItems()
     {
-        // 使用 AIP 添加到原版物品栏
-//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup);
+        // ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(IzumiItems::addItemToItemGroup);
         Interval.LOGGER.info("Registering Items");
     }
 }

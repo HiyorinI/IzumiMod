@@ -1,14 +1,20 @@
 package net.mikuas.interval;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.mikuas.interval.block.IzumiBlocks;
 import net.mikuas.interval.block.IzumiFluids;
 import net.mikuas.interval.block.entity.IzumiBoxBlockEntities;
+import net.mikuas.interval.enchantment.IzumiEnchantmentEffects;
 import net.mikuas.interval.entity.IzumiBoats;
+import net.mikuas.interval.entity.IzumiEntities;
+import net.mikuas.interval.entity.custom.IzumiTigerEntity;
 import net.mikuas.interval.item.IzumiItemGroups;
 import net.mikuas.interval.item.IzumiItems;
+import net.mikuas.interval.particle.IzumiParticles;
 import net.mikuas.interval.recipe.IzumiRecipeTypes;
 import net.mikuas.interval.screen.IzumiScreenHandlers;
 import net.mikuas.interval.sound.IzumiSoundEvents;
@@ -18,14 +24,13 @@ import net.mikuas.interval.util.IzumiLootTableModifiers;
 import net.mikuas.interval.util.IzumiTrade;
 import net.mikuas.interval.villager.IzumiVillagers;
 import net.mikuas.interval.world.gen.IzumiWorldGeneration;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Interval implements ModInitializer
 {
-
     public static final String MOD_ID = "interval";
-
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
@@ -72,5 +77,21 @@ public class Interval implements ModInitializer
         FlammableBlockRegistry.getDefaultInstance().add(IzumiBlocks.STRIPPED_IZUMI_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(IzumiBlocks.IZUMI_LEAVES, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(IzumiBlocks.IZUMI_PLANKS, 5, 20);
+
+        FabricDefaultAttributeRegistry.register(IzumiEntities.TIGER, IzumiTigerEntity.createTigerAttributes());
+
+        IzumiParticles.registerModParticles();
+
+        // 传送门
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(IzumiBlocks.IZUMI_VOID_MIST)                    // 框架方块
+                .lightWithItem(IzumiItems.IZUMI_MIMI)                       // 激活 Item
+                .destDimID(Identifier.of(Interval.MOD_ID, "izumi"))
+                // .forcedSize(8, 8)                                              // 限制大小
+                .tintColor(0x76A4F)
+                .registerPortal();
+
+        // 附魔
+        IzumiEnchantmentEffects.registerModEnchantmentEffects();
     }
 }

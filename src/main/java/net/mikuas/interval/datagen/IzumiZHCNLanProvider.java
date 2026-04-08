@@ -13,7 +13,8 @@ public class IzumiZHCNLanProvider extends FabricLanguageProvider
 {
     private static final String Villager = "entity.minecraft.villager.";
 
-    public IzumiZHCNLanProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    public IzumiZHCNLanProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
+    {
         super(dataOutput, "zh_cn", registryLookup);
     }
 
